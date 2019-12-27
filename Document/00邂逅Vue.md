@@ -1,3 +1,7 @@
+---
+typora-root-url: img
+---
+
 ## 邂逅Vue
 
  ### 1 认识Vue
@@ -28,7 +32,7 @@ Vue (读音 /vjuː/，类似于 **view**) 是一套用于构建用户界面的**
 
 #### 2.1 直接CDN引入
 
-```
+```html
 <!-- 开发环境版本，包含了有帮助的命令行警告 --> 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <!-- 生产环境版本，优化了尺寸和速度 -->
@@ -37,7 +41,7 @@ Vue (读音 /vjuː/，类似于 **view**) 是一套用于构建用户界面的**
 
 #### 2.2 下载和引入
 
-```
+```html
 开发环境 https://vuejs.org/js/vue.js 
 生产环境 https://vuejs.org/js/vue.min.js
 ```
@@ -52,7 +56,7 @@ Vue (读音 /vjuː/，类似于 **view**) 是一套用于构建用户界面的**
 
 #### 3.1 Hello Vue
 
-```
+```html
 //html
 <div id="app">
 	<div>
@@ -73,7 +77,7 @@ Vue (读音 /vjuː/，类似于 **view**) 是一套用于构建用户界面的**
 
 #### 3.2 列表渲染
 
-```
+```html
 //html
 <div id="app">
 	<ul>
@@ -85,7 +89,7 @@ Vue (读音 /vjuː/，类似于 **view**) 是一套用于构建用户界面的**
     new Vue({
       el: '#app',
       data: {
-				movies: ['钢铁侠', '蜘蛛侠', '美国队长', '复仇者联盟']
+			movies: ['钢铁侠', '蜘蛛侠', '美国队长', '复仇者联盟']
       }
     })
 </script>
@@ -93,7 +97,7 @@ Vue (读音 /vjuː/，类似于 **view**) 是一套用于构建用户界面的**
 
 #### 3.3 案例-计数器
 
-```
+```html
 //html
 <div id="app">
 	<h2>当前计数：{{count}}</h2>
@@ -108,14 +112,14 @@ Vue (读音 /vjuː/，类似于 **view**) 是一套用于构建用户界面的**
     data: {
       count: 0
     },
-		methods: {
+	methods: {
       increment() {
         this.count++
-			},
-			decrement() {
+	  },
+	  decrement() {
         this.count--
-			}
-		}
+	  }
+	}
   })
 </script>
 ```
@@ -130,7 +134,7 @@ Vue (读音 /vjuː/，类似于 **view**) 是一套用于构建用户界面的**
 
 ##### 3.4.2 Vue中的MVVM
 
-![1575044249498](C:\Users\PK\AppData\Roaming\Typora\typora-user-images\1575044249498.png)
+![1575044249498](./1575044249498.png)
 
 - View层：
   - 视图层
